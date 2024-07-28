@@ -1,0 +1,193 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #191931;
+    color: #e1e1f1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Outfit", sans-serif;
+    padding-top: 4rem;
+    gap: 1rem;
+}
+
+.profil {
+    width: 8rem;
+    border-radius: 50%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    object-position: top;
+}
+
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.sosmed {
+    text-align: center;
+}
+
+.sosmed i {
+    font-size: 1.5rem;
+    color: #8787a3;
+}
+
+.sosmed i:hover {
+    color: white;
+}
+
+.sosmed a:not(:last-child) {
+    margin-right: 1rem;
+}
+
+
+ul.bio-link li {
+    list-style: none;
+}
+
+
+/* link card css */
+/* .link-card {
+    margin: 1rem auto; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #444480;
+    padding: 0.5rem;
+    border-radius: 20px;
+    width: 80rem;
+    max-width: 40rem;
+    box-shadow: 8px 10px 0 #0f0f25;
+}
+
+@media (max-width: 1200px) {
+    .link-card {
+        width: 70rem;
+    }
+}
+
+@media (max-width: 992px) {
+    .link-card {
+        width: 60rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .link-card {
+        width: 50rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .link-card {
+        width: 150%; 
+        margin: 1rem -25%; 
+    }
+} */
+
+.link-card {
+    margin: 1rem -50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #444480;
+    padding: 0.5rem;
+    border-radius: 20px;
+    width: 200%;
+    max-width: 40rem;
+    box-shadow: 8px 10px 0 #0f0f25;
+    border: 2PX solid #444480;
+}
+
+.link-card:hover {
+    border: 2px solid white;
+}
+
+.link-card p {
+    text-align: center;
+    padding: 0.5rem;
+}
+
+
+.link-icon i {
+    color: inherit;
+}
+
+.link-icon {
+    background-image: linear-gradient(to top, purple, cyan);
+    padding: 0.3rem;
+    border-radius: 10px;
+}
+
+.link-action {
+    color: #8787a3;
+    cursor: pointer;
+    padding: 10px;
+}
+
+
+.copyright img {
+    width: 6rem;
+    opacity: 0.4;
+}
+
+.copyright {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #8787a3;
+    font-size: 0.75rem;
+
+}
+
+
+/* link copypaste notification  */
+.toast-container {
+    position: fixed;
+    top: 0;
+    background-color: white;
+    color: #0f0f25;
+    padding: 1rem;
+    margin-top: 1rem;
+    margin: 0.5rem;
+    border-radius: 1rem;
+    animation: muncul 300ms ease-in-out ;
+}
+
+#toast {
+    width: max-content;
+    position: relative;
+    top: 0;
+}
+
+.toast-gone {
+    animation: hilang 1s ease-in-out 1s;
+}
+
+
+@keyframes muncul {
+    from {
+        opacity: 0;
+        transform: translateY(-4rem);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes hilang {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
