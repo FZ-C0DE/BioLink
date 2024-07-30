@@ -15,12 +15,28 @@ body {
     gap: 1rem;
 }
 
+/* animasi FATZ */
+.bg-text-animation {
+    position: absolute;
+    top: 5rem;
+    font-size: 8rem;
+    text-transform: uppercase;
+    font-weight: 900;
+    -webkit-text-stroke: 2px #2d2d56;
+    -webkit-text-fill-color: transparent;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    z-index: -1;
+    user-select: none;
+
+}
+
 .profil {
-    width: 8rem;
+    width: 10rem;
     border-radius: 50%;
     aspect-ratio: 1/1;
     object-fit: cover;
     object-position: top;
+
 }
 
 
@@ -105,11 +121,12 @@ ul.bio-link li {
     border: 2PX solid #444480;
 }
 
-@media (max-width: 576px) {
+@media (max-width: 568px) {
     .link-card {
-        width: 130%; 
-        margin: 1rem -15%; 
+        width: 130%;
+        margin: 1rem -15%;
     }
+}
 
 .link-card:hover {
     border: 2px solid white;
@@ -163,7 +180,7 @@ ul.bio-link li {
     margin-top: 1rem;
     margin: 0.5rem;
     border-radius: 1rem;
-    animation: muncul 300ms ease-in-out ;
+    animation: muncul 300ms ease-in-out;
 }
 
 #toast {
@@ -193,6 +210,7 @@ ul.bio-link li {
     from {
         opacity: 1;
     }
+
     to {
         opacity: 0;
     }
