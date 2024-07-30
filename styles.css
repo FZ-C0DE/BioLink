@@ -105,6 +105,12 @@ ul.bio-link li {
     border: 2PX solid #444480;
 }
 
+@media (max-width: 576px) {
+    .link-card {
+        width: 150%; 
+        margin: 1rem -25%; 
+    }
+
 .link-card:hover {
     border: 2px solid white;
 }
