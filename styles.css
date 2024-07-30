@@ -107,8 +107,8 @@ ul.bio-link li {
 
 @media (max-width: 576px) {
     .link-card {
-        width: 150%; 
-        margin: 1rem -25%; 
+        width: 130%; 
+        margin: 1rem -15%; 
     }
 
 .link-card:hover {
