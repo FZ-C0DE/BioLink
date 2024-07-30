@@ -45,3 +45,18 @@ document.querySelectorAll(".sosmed i").forEach((sosmed) => {
         sosmed.classList.add("ph");
     })
 });
+
+
+/** animasi Text bergerak saat di scroll */
+
+document.addEventListener("scroll", (e) => {
+    document.querySelector(".bg-text-animation").style.transform = `translateX(${
+      window.scrollY / 5
+    }px)`;
+  });
+
+// document.addEventListener("scroll", (e) => {
+//     console.log("scroll : ", window.scrollY);
+
+//     document.querySelector(".bg-text-animation").style.transform = 'translateX($(window.scrollY)px)'
+// })
